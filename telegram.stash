@@ -1,0 +1,760 @@
+# <#>Telegram<> SpeedSheet
+<b>Find what you need, faster.<>
+
+This speedsheet covers how to use Telegram, especially for creating and managing bots. But also how to format your content, etc..
+This is in no way complete but it has all the basics.
+
+Find this useful? Tell us!
+Find it is missing something? Please tell us!
+We love feedback!
+
+
+# Summary
+
+
+### Online - Official
+
+APIs:
+<l>https://core.telegram.org/api<>
+
+
+
+### Online - Bots - Developer Introduction
+
+Bots:
+<l>https://core.telegram.org/bots<>
+
+Bot API:
+<l>https://core.telegram.org/bots/api#available-types<>
+
+
+
+### SpeedSheets - aiogram
+
+An asynchronous Python library for Telegram
+
+<l>/s/aiogram<>
+@
+@ python library
+
+
+
+# Bots
+
+
+### Bot - User Name Restrictions
+
+Length:			5 - 53 Characters
+Characters:		a-z, A-Z, 0-9, _ (underscore)
+Must End In:		bot
+
+
+Example:
+
+<cb><v>hal_bot<><>
+
+<cb><v>Peon1Bot<><>
+@
+@ username
+
+
+
+# BotFather Commands
+
+Creates and manages Telegram bots.
+
+
+
+### Enter Command
+
+Start a direct message to botfather:
+
+Search For:
+
+<cb>@botfather<>
+
+Type Command Into Chat:
+
+<cb>/<v>command<><>
+@
+@ talk to father, start conversation, commands
+
+
+
+### Bot - Create
+
+Command (To <c>@BotFather<>):
+
+<cb>/newbot<>
+
+Next, Enter Bot Name:
+
+<cb><v>bot_name<><>
+
+Next, Enter Bot User Name:
+
+<cb><v>bot_username<>bot<>
+
+
+Creates a new bot.
+
+
+
+### Bot - Delete
+
+Command (To <c>@BotFather<>):
+
+<cb>/deletebot<>
+
+Next, Enter Bot Name:
+
+<cb><v>bot_name<><>
+
+
+Delete a bot.
+@
+@ deletebot
+
+
+
+### Bot - Set Name
+
+Command (To <c>@BotFather<>):
+
+<cb>/setname<>
+
+
+Change a bot's name.
+@
+@ setname
+
+
+
+### Bot - Set Description
+
+Command (To <c>@BotFather<>):
+
+<cb>/setdescription<>
+
+
+Change bot description.
+@
+@ setdescription
+
+
+
+### Bot - Set About Text
+
+Command (To <c>@BotFather<>):
+
+<cb>/setabouttext<>
+
+
+Change bot about info.
+@
+@ setabouttext
+
+
+
+### Bot - Set User Pic
+
+Command (To <c>@BotFather<>):
+
+<cb>/setuserpic<>
+
+
+Change bot profile photo.
+@
+@ setuserpic
+
+
+
+### Bot - Set Commands
+
+Command (To <c>@BotFather<>):
+
+<cb>/setcommands<>
+
+
+Change the list of commands.
+@
+@ setcommands
+
+
+
+### Bots - List / Edit
+
+Command (To <c>@BotFather<>):
+
+<cb>/mybots<>
+
+
+Edit your bots [beta].
+
+
+
+### Bot Settings - Create Token
+
+Command (To <c>@BotFather<>):
+
+<cb>/token<>
+
+
+Generate authorization token.
+@
+@ token
+
+
+
+### Bot Settings - Revoke Token
+
+Command (To <c>@BotFather<>):
+
+<cb>/revoke<>
+
+
+Revoke bot access token.
+@
+@ revoke
+
+
+
+### Bot Settings - Toggle Inline Mode
+
+Command (To <c>@BotFather<>):
+
+<cb>/setinline<>
+
+
+Toggle inline mode.
+@
+@ setinline
+
+
+
+### Bot Settings - Toggle Inline Requests
+
+Command (To <c>@BotFather<>):
+
+<cb>/setinlinegeo<>
+
+
+Toggle inline location requests.
+@
+@ setinlinegeo
+
+
+
+### Bot Settings - Set Inline Feedback
+
+Command (To <c>@BotFather<>):
+
+<cb>/setinlinefeedback<>
+
+
+Change inline feedback settings.
+@
+@ setinlinefeedback
+
+
+
+### Bot Settings - Set Join Groups
+
+Command (To <c>@BotFather<>):
+
+<cb>/setjoingroups<>
+
+
+Can your bot be added to groups?
+@
+@ setjoingroups
+
+
+
+### Bot Settings - Set Privacy
+
+Command (To <c>@BotFather<>):
+
+<cb>/setprivacy<>
+
+
+Toggle privacy mode in groups.
+@
+@ setprivacy
+
+
+
+### Games - Edit Games
+
+Command (To <c>@BotFather<>):
+
+<cb>/mygames<>
+
+
+Edit your games [beta].
+@
+@ mygames
+
+
+
+### Games - Create Game
+
+Command (To <c>@BotFather<>):
+
+<cb>/newgame<>
+
+
+Create a new game.
+@
+@ newgame
+
+
+
+### Games - List Games
+
+Command (To <c>@BotFather<>):
+
+<cb>/listgames<>
+
+
+Get a list of your games.
+@
+@ listgames
+
+
+
+### Games - Edit Game
+
+Command (To <c>@BotFather<>):
+
+<cb>/editgame<>
+
+
+Edit a game.
+@
+@ editgame
+
+
+
+### Games - Delete Game
+
+Command (To <c>@BotFather<>):
+
+<cb>/deletegame<>
+
+
+Delete an existing game.
+@
+@ deletegame
+
+
+
+# How To
+@
+@ how-to
+
+
+
+### Telegram - API Token - Create
+
+Create a bot using <c>@BotFather<>.
+
+Once done, <c>@BotFather<> will return the API token.
+
+
+Each bot has an assigned API token.
+The API token allows the bot to use Telegram's APIs.
+
+
+
+### User Id - Get
+
+Get your user id...
+
+Message <c>@userinfobot<>:
+
+<cb>@userinfobot<>
+
+Hit Start
+
+Your user information will be displayed.
+@
+@ userid, user_id
+
+
+
+
+# Reference - Formats
+
+
+
+## Default Format
+
+<card>HTML<>
+
+<m>(Confirm)<>
+
+
+
+## HTML Format
+
+Online Notes:
+<l>https://core.telegram.org/bots/api#html-style<>
+@
+@ tags
+
+
+### HTML Format - Tag Summary
+
+<cb>\<b><b><v>bold<><>\</b>
+\<strong><b><v>bold<><>\</strong><>
+
+<cb>\<i><i><v>italic<><>\</i>
+\<em><i><v>italic<><>\</em><>
+
+<cb>\<u><v>underline<>\</u>
+\<ins><v>underline<>\</ins><>
+
+<cb>\<s><v>strikethrough<>\</s>
+\<strike><v>strikethrough<>\</strike>
+\<del><v>strikethrough<>\</del><>
+
+<cb>\<a href="<v>http://www.example.com<>/"><l "http://www.example.com"><v>inline URL<><>\</a><>
+
+<cb>\<a href="<v>tg://user?id=123456789<>"><l "tg://user?id=123456789"><v>inline mention of a user<><>\</a><>
+
+<cb>\<code><c><v>inline fixed-width code<><>\</code><>
+
+<cb>\<pre><c><v>pre-formatted fixed-width code block<><>\</pre><>
+
+<cb>\<pre><c>\<code class="<v>language-python<>"><v>pre-formatted fixed-width code block written in the Python programming language<>\</code><>\</pre><>
+
+
+
+### HTML Format - Tags
+
+
+#### HTML Format - Bold
+
+<cb>\<b><b><v>bold<><>\</b>
+\<strong><b><v>bold<><>\</strong><>
+
+Displays:
+
+<card><b>bold<><>
+@
+@ \<b>, \<bold>, \<strong>
+
+
+
+#### HTML Format - Italic
+
+<cb>\<i><i><v>italic<><>\</i>
+\<em><i><v>italic<><>\</em><>
+
+Displays:
+
+<card><i>italic<><>
+@
+@ \<em>, \<i>
+
+
+
+#### HTML Format - Underline
+
+<cb>\<u><v>underline<>\</u>
+\<ins><v>underline<>\</ins><>
+
+Displays:
+
+<card><_>underline<><>
+@
+@ \<u>, \<ins>
+
+
+
+#### HTML Format - Strikethrough
+
+<cb>\<s><v>strikethrough<>\</s>
+\<strike><v>strikethrough<>\</strike>
+\<del><v>strikethrough<>\</del><>
+@
+@ del, \<s>, \<strike>, \<strikethrough>
+
+
+
+#### HTML Format - Link
+
+<cb>\<a href="<v>http://www.example.com/<>"><l "http://www.example.com/"><v>inline URL<><>\</a><>
+@
+@ \<a>, a href, \<a href>, http:, https:, url
+
+
+
+#### HTML Format - User Mention Link
+
+<cb>\<a href="tg://user?id=<v>user_id<>><v>user mention<>\</a><>
+
+<cb>\<a href="tg://user?id=<v>123456789<>"><v>inline mention of a user<>\</a><>
+@
+@ \<a>, a href, \<a href>, tg://user?id=, url
+
+
+
+#### HTML Format - Code
+
+<cb>\<code><c><v>inline fixed-width code<><>\</code><>
+@
+@ \<code>
+
+
+
+#### HTML Format - Code Block
+
+<cb>\<pre><c><v>pre-formatted fixed-width code block<><>\</pre><>
+@
+@ \<pre>
+
+
+
+#### HTML Format - Language Specific Code Block
+
+<cb>\<pre><c>\<code class="<v>language-python<>"><v>pre-formatted fixed-width code block written in the Python programming language<>\</code><>\</pre><>
+
+@
+@ \<pre>, \<code>, \<code class=>
+
+
+
+## Markdown 2 Format
+
+Online Notes:
+<l>https://core.telegram.org/bots/api#markdownv2-style<>
+
+
+### Bot - Markdown Format - Style Summary
+
+<cb><v>escaped<> \\* <v>asterisk<><>
+
+<cb>*<b><v>bold text<><>*<>
+
+<cb>_<i><v>italic text<><>_<>
+
+<cb>__<v>underline<>__<>
+
+<cb>~<v>strikethrough<>~<>
+
+<cb>*<b><v>bold<> _<i><v>italic bold<> ~<v>italic bold strikethroug<>h~ __<v>underline italic bold<>__<>_ <>*<>
+
+<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
+
+<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
+
+<cb>`<v>inline fixed-width code<>`<>
+
+<cb>```
+<v>pre-formatted fixed-width code block<>
+```<>
+
+<cb>```python
+<v>pre-formatted fixed-width code block written in the Python programming language<>
+```<>
+
+
+
+### User - Markdown Format - Style Summary
+
+<cb>**<b><v>bold text<><>**<>
+
+<cb>_<i><v>italic text<><>_<>
+
+<m>(Not Working:)<>
+<cb>__<v>underline<>__<>
+
+<cb>~~<v>strikethrough<>~~<>
+
+<cb>*<b><v>bold<> _<i><v>italic bold<> ~<v>italic bold strikethroug<>h~ __<v>underline italic bold<>__<>_ <>*<>
+
+<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
+
+<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
+
+<cb>`<v>inline fixed-width code<>`<>
+
+<cb>```
+<v>pre-formatted fixed-width code block<>
+```<>
+
+<cb>```python
+<v>pre-formatted fixed-width code block written in the Python programming language<>
+```<>
+
+
+
+### Markdown Format - Styles
+
+
+#### Markdown Format - Escape *
+
+<cb><v>escaped<> \\* <v>asterisk<><>
+@
+@ asterisk
+
+
+
+#### Markdown Format - Bold
+
+Bot:
+
+<cb>*<b><v>bold text<><>*<>
+
+Typed Message:
+
+<cb>**<b><v>bold text<><>**<>
+
+With Escaped *:
+
+<cb>*<b><v>bold \\* text<><>*<>
+
+
+
+#### Markdown Format - Italic
+
+<cb>_<i><v>italic text<><>_<>
+
+
+
+#### Markdown Format - Underline
+
+<cb>__<v>underline<>__<>
+
+
+
+#### Markdown Format - Strikethrough
+
+Bot:
+
+<cb>~<v>strikethrough<>~<>
+
+Typed Message:
+
+<cb>~~~<v>strikethrough<>~~~<>
+
+
+
+#### Markdown Format - Url Link
+
+<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
+@
+@ http:, https:, []()
+
+
+
+#### Markdown Format - User Mention Link
+
+<cb>[<v>mention text<>](tg://user?id=<v>user_id<>)<>
+
+<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
+@
+@ tg://user?id=, url, []()
+
+
+
+#### Markdown Format - Inline Code
+
+<cb>`<v>inline fixed-width code<>`<>
+
+
+
+#### Markdown Format - Code Block
+
+<cb>```
+<v>pre-formatted fixed-width code block<>
+```<>
+
+
+
+#### Markdown Format - Language Specific Code Block
+
+Python:
+
+<cb>```python
+<v>pre-formatted fixed-width code block written in the Python programming language<>
+```<>
+
+<c>```python<>
+Denotes the Python language. Must be typed as is.
+
+
+
+# Reference - Libraries
+
+
+## List of Libraries
+
+Official Page:
+<l>https://core.telegram.org/bots/samples<>
+
+
+
+## List of Python Libraries
+
+
+
+### Python Library - python-telegram-bot
+Most actively developed Telegram library.
+
+Online Docs:
+<l>https://python-telegram-bot.readthedocs.io/en/stable/<>
+
+Github:
+<l>https://github.com/python-telegram-bot/python-telegram-bot#telegram-api-support<>
+
+
+
+### Python Library - pyTelegramBotAPI
+
+
+Github:
+<l>https://github.com/eternnoir/pyTelegramBotAPI<>
+
+
+
+### Python Library - aiogram
+Async library that uses aiohttp under the hood.
+
+SpeedSheet:
+<l>/s/aiogram<>
+
+Github:
+<l>https://github.com/aiogram/aiogram<>
+
+
+
+# Acronyms
+
+
+# Terms
+
+
+### BotFather
+One Bot to rule them all!
+
+<cb>@botfather<>
+
+
+
+### User ID
+
+The numeric id that identifies a user.
+
+
+
+### User Name - Restrictions
+
+Length		5 - 53 Characters
+Characters	a-z, A-Z, 0-9, _ (underscore)
+@
+@ username
+
+
