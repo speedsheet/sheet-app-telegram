@@ -1,39 +1,60 @@
 # <#>Telegram<> SpeedSheet
-<b>Find what you need, faster.<>
+<b>Find it faster.<>
 
-This speedsheet covers how to use Telegram, especially for creating and managing bots. But also how to format your content, etc..
-This is in no way complete but it has all the basics.
+This is an interactive <b>Telegram<> cheat sheet. Telegram is a instant messenger application that runs on multiple platforms. Use the search to instantly get answers.
 
-Find this useful? Tell us!
-Find it is missing something? Please tell us!
-We love feedback!
+This speedsheet covers how to use Telegram, especially for creating and managing bots. It also includes how to format your content, etc..
 
 
-# Summary
+<table><col><b>Format Syntax<>
+
+<*><link "?q=user-markdown#user_markdown_-_syntax_summary">Markdown - User<>
+<link "?q=bot-markdown#bot_markdown_-_syntax_summary">Markdown - Bot<>
+<link "?q=html-only#html_-_syntax_summary">HTML<><>
 
 
-### Online - Official
 
-APIs:
+<b>Reference<>
+
+<*><link "?q=online-docs">Online Document<>
+<link "?q=terms">Terms<><><><col>	<><col><b>BotFather<>
+
+<*><link "?q=botfather-only">BotFather<><>
+
+<*><link "?q=bot-commands">Bot Commands<>
+<link "?q=bot-settings">Bot Settings<>
+<link "?q=game-commands">Game Commands<><>
+
+<b>Development<>
+
+<*><link "?q=how-to">How To<><>
+
+<*><link "?q=libraries#list_of_libraries">Libraries<><>
+<*><link "?q=python+libraries">Python Libraries<>
+<link "aiogram">aiogram<><><><>
+
+
+# Online Documents
+@
+@ doc-only, docs-only, online-docs-only
+
+
+### Official APIs
 <l>https://core.telegram.org/api<>
 
 
-
-### Online - Bots - Developer Introduction
-
-Bots:
+### Official Docs - Bots - Developer Introduction
 <l>https://core.telegram.org/bots<>
 
-Bot API:
+
+### Official Docs - Bots - APIs
 <l>https://core.telegram.org/bots/api#available-types<>
 
 
-
 ### SpeedSheets - aiogram
+<l>aiogram<>
 
-An asynchronous Python library for Telegram
-
-<l>/s/aiogram<>
+An asynchronous Python library for Telegram.
 @
 @ python library
 
@@ -62,10 +83,12 @@ Example:
 # BotFather Commands
 
 Creates and manages Telegram bots.
+@
+@ botfather-only
 
 
 
-### Enter Command
+### How To Send Commands
 
 Start a direct message to botfather:
 
@@ -79,6 +102,11 @@ Type Command Into Chat:
 @
 @ talk to father, start conversation, commands
 
+
+
+## Bot Commands
+@
+@ bot-commands-only
 
 
 ### Bot - Add to Chat
@@ -206,6 +234,12 @@ Edit your bots [beta].
 
 
 
+## Bot Settings
+@
+@ bot-settings-only
+
+
+
 ### Bot Settings - Create Token
 
 Command (To <c>@BotFather<>):
@@ -297,6 +331,11 @@ Toggle privacy mode in groups.
 
 
 
+## Game Commands
+@
+@ game-commands
+
+
 ### Games - Edit Games
 
 Command (To <c>@BotFather<>):
@@ -382,9 +421,9 @@ The API token allows the bot to use Telegram's APIs.
 
 ### User Id - Get
 
-Get your user id...
+To get your user id and information, start a new chat message with <c>@userinfobot<>.
 
-Message <c>@userinfobot<>:
+New Chat Message:
 
 <cb>@userinfobot<>
 
@@ -392,8 +431,7 @@ Hit Start
 
 Your user information will be displayed.
 @
-@ userid, user_id
-
+@ userid, user_id, @userinfobot, information, name
 
 
 
@@ -401,7 +439,15 @@ Your user information will be displayed.
 
 
 
-## Default Format
+## Format Syntax - User Default
+
+<card>Markdown 2<>
+
+<m>(Confirm)<>
+
+
+
+## Format Syntax - Bot Default
 
 <card>HTML<>
 
@@ -409,15 +455,15 @@ Your user information will be displayed.
 
 
 
-## HTML Format
+# HTML Format Syntax
 
 Online Notes:
 <l>https://core.telegram.org/bots/api#html-style<>
 @
-@ tags
+@ tags, html-syntax-only, html-only
 
 
-### HTML Format - Tag Summary
+### HTML - Syntax Summary
 
 <cb>\<b><b><v>bold<><>\</b>
 \<strong><b><v>bold<><>\</strong><>
@@ -441,13 +487,11 @@ Online Notes:
 <cb>\<pre><c><v>pre-formatted fixed-width code block<><>\</pre><>
 
 <cb>\<pre><c>\<code class="<v>language-python<>"><v>pre-formatted fixed-width code block written in the Python programming language<>\</code><>\</pre><>
+@
+@ elements
 
 
-
-### HTML Format - Tags
-
-
-#### HTML Format - Bold
+### HTML - Bold
 
 <cb>\<b><b><v>bold<><>\</b>
 \<strong><b><v>bold<><>\</strong><>
@@ -460,7 +504,7 @@ Displays:
 
 
 
-#### HTML Format - Italic
+### HTML - Italic
 
 <cb>\<i><i><v>italic<><>\</i>
 \<em><i><v>italic<><>\</em><>
@@ -473,7 +517,7 @@ Displays:
 
 
 
-#### HTML Format - Underline
+### HTML - Underline
 
 <cb>\<u><v>underline<>\</u>
 \<ins><v>underline<>\</ins><>
@@ -486,7 +530,7 @@ Displays:
 
 
 
-#### HTML Format - Strikethrough
+### HTML - Strikethrough
 
 <cb>\<s><v>strikethrough<>\</s>
 \<strike><v>strikethrough<>\</strike>
@@ -496,7 +540,7 @@ Displays:
 
 
 
-#### HTML Format - Link
+### HTML - Link
 
 <cb>\<a href="<v>http://www.example.com/<>"><l "http://www.example.com/"><v>inline URL<><>\</a><>
 @
@@ -504,7 +548,7 @@ Displays:
 
 
 
-#### HTML Format - User Mention Link
+### HTML - User Mention Link
 
 <cb>\<a href="tg://user?id=<v>user_id<>><v>user mention<>\</a><>
 
@@ -514,7 +558,7 @@ Displays:
 
 
 
-#### HTML Format - Code
+### HTML - Code
 
 <cb>\<code><c><v>inline fixed-width code<><>\</code><>
 @
@@ -522,7 +566,7 @@ Displays:
 
 
 
-#### HTML Format - Code Block
+### HTML - Code Block
 
 <cb>\<pre><c><v>pre-formatted fixed-width code block<><>\</pre><>
 @
@@ -530,7 +574,7 @@ Displays:
 
 
 
-#### HTML Format - Language Specific Code Block
+### HTML - Language Specific Code Block
 
 <cb>\<pre><c>\<code class="<v>language-python<>"><v>pre-formatted fixed-width code block written in the Python programming language<>\</code><>\</pre><>
 
@@ -539,58 +583,22 @@ Displays:
 
 
 
-## Markdown 2 Format
+# Markdown 2 - User Syntax
 
 Online Notes:
 <l>https://core.telegram.org/bots/api#markdownv2-style<>
-
-
-### Bot - Markdown Format - Style Summary
-
-<cb><v>escaped<> \\* <v>asterisk<><>
-
-<cb>*<b><v>bold text<><>*<>
-
-<cb>_<i><v>italic text<><>_<>
-
-<cb>__<v>underline<>__<>
-
-<cb>~<v>strikethrough<>~<>
-
-<cb>*<b><v>bold<> _<i><v>italic bold<> ~<v>italic bold strikethroug<>h~ __<v>underline italic bold<>__<>_ <>*<>
-
-<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
-
-<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
-
-<cb>`<v>inline fixed-width code<>`<>
-
-<cb>```
-<v>pre-formatted fixed-width code block<>
-```<>
-
-<cb>```python
-<v>pre-formatted fixed-width code block written in the Python programming language<>
-```<>
+@
+@ format, user-markdown-only, markdown-only, markdown-user-only
 
 
 
-### User - Markdown Format - Style Summary
+### User Markdown - Syntax Summary
 
 <cb>**<b><v>bold text<><>**<>
 
-<cb>_<i><v>italic text<><>_<>
-
-<m>(Not Working:)<>
-<cb>__<v>underline<>__<>
+<cb>__<i><v>italic text<><>__<>
 
 <cb>~~<v>strikethrough<>~~<>
-
-<cb>*<b><v>bold<> _<i><v>italic bold<> ~<v>italic bold strikethroug<>h~ __<v>underline italic bold<>__<>_ <>*<>
-
-<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
-
-<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
 
 <cb>`<v>inline fixed-width code<>`<>
 
@@ -598,25 +606,9 @@ Online Notes:
 <v>pre-formatted fixed-width code block<>
 ```<>
 
-<cb>```python
-<v>pre-formatted fixed-width code block written in the Python programming language<>
-```<>
 
 
-
-### Markdown Format - Styles
-
-
-#### Markdown Format - Escape *
-
-<cb><v>escaped<> \\* <v>asterisk<><>
-@
-@ \\
-@ asterisk
-
-
-
-#### Markdown Format - Bold
+### User Markdown - Bold
 
 User:
 
@@ -636,7 +628,7 @@ Bot, With Escaped * <super><#>1<><>:
 
 
 
-#### Markdown Format - Italic
+### User Markdown - Italic
 
 User:
 
@@ -654,19 +646,112 @@ Bot, With Escaped _:
 
 
 
-#### Markdown Format - Underline
+### User Markdown - Strikethrough
 
-Bot:
+User:
+
+<cb>~~~<v>strikethrough<>~~~<>
+
+
+
+### User Markdown - Inline Code
+
+<cb>`<v>inline fixed-width code<>`<>
+
+
+
+### User Markdown - Code Block
+
+<cb>```
+<v>pre-formatted fixed-width code block<>
+
+
+
+# Markdown 2 - Bot Format
+
+Online Notes:
+<l>https://core.telegram.org/bots/api#markdownv2-style<>
+@
+@ bot-markdown-only, markdown-bot-only
+
+
+### Bot Markdown - Syntax Summary
+
+<cb><v>escaped<> \\* <v>asterisk<><>
+
+<cb>*<b><v>bold text<><>*<>
+
+<cb>_<i><v>italic text<><>_<>
+
+<cb>__<v>underline<>__<>
+
+<cb>~<v>strikethrough<>~<>
+
+<cb>*<b><v>bold<> _<i><v>italic bold<> ~<v>italic bold strikethroug<>h~ __<v>underline italic bold<>__<>_ <>*<>
+
+<cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
+
+<cb>[<v>inline mention of a user<>](tg://user?id=<v>123456789<>)<>
+
+<cb>`<v>inline fixed-width code<>`<>
+
+<cb>```
+<v>pre-formatted fixed-width code block<>
+```<>
+
+<cb>```python
+<v>pre-formatted fixed-width code block written in the Python programming language<>
+```<>
+
+
+
+### Bot Markdown - Escape Asterisk (*)
+
+<cb>\\*<>
+
+
+Example:
+
+<cb><v>escaped<> \\* <v>asterisk<><>
+@
+@ \\
+@ asterisk
+
+
+
+### Bot Markdown - Bold
+
+<cb>*<b><v>bold text<><>*<>
+
+With Escaped * <super><#>1<><>:
+
+<cb>*<b><v>bold \\* text<><>*<>
+
+1 - The escaped asterisk must be in a bold section. Otherwise it prints as is.
+@
+@ **
+
+
+
+### Bot Markdown - Italic
+
+<cb>_<b><v>italic text<><>_<>
+
+With Escaped _:
+
+<cb>_<b><v>italic \\_ text<><>_<>
+@
+@ __
+
+
+
+### Bot Markdown - Underline
 
 <cb>__<v>underline<>__<>
 
 
 
-#### Markdown Format - Strikethrough
-
-User:
-
-<cb>~~~<v>strikethrough<>~~~<>
+### Bot Markdown - Strikethrough
 
 Bot:
 
@@ -674,7 +759,7 @@ Bot:
 
 
 
-#### Markdown Format - Url Link
+### Bot Markdown - Url Link
 
 <cb>[<v>inline URL<>](<v>http://www.example.com/<>)<>
 @
@@ -682,7 +767,7 @@ Bot:
 
 
 
-#### Markdown Format - User Mention Link
+### Bot Markdown - User Mention Link
 
 <cb>[<v>mention text<>](tg://user?id=<v>user_id<>)<>
 
@@ -692,13 +777,13 @@ Bot:
 
 
 
-#### Markdown Format - Inline Code
+### Bot Markdown - Inline Code
 
 <cb>`<v>inline fixed-width code<>`<>
 
 
 
-#### Markdown Format - Code Block
+### Bot Markdown - Code Block
 
 <cb>```
 <v>pre-formatted fixed-width code block<>
@@ -706,7 +791,7 @@ Bot:
 
 
 
-#### Markdown Format - Language Specific Code Block
+### Bot Markdown - Language Specific Code Block
 
 Python:
 
@@ -756,17 +841,17 @@ Github:
 Async library that uses aiohttp under the hood.
 
 SpeedSheet:
-<l>/s/aiogram<>
+<l>aiogram<>
 
 Github:
 <l>https://github.com/aiogram/aiogram<>
 
 
 
-# Acronyms
-
-
 # Terms
+@
+@ term-only, terms-only, glossary
+
 
 
 ### BotFather
